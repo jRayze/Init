@@ -1,0 +1,1 @@
+ifconfig -a | grep ": f" | tr ":" "\n" | grep -v flags | tr "\n" " " | rev | cut -c2- | rev 
